@@ -2,7 +2,7 @@
 *ESP32 cam object detection code
 * by circuirdigest on 27-June-2024
 */
-#include <veg-detect-esp32cam_inferencing.h>
+#include <detect-esp32cam_inferencing.h>
 #include "edge-impulse-sdk/dsp/image/image.hpp"
 
 #include "esp_camera.h"
@@ -54,7 +54,7 @@
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
-// ESP32-CAM doesn't have dedicated i2c pins, so we define our own. Let's choose 15 and 14
+
 #define I2C_SDA 15
 #define I2C_SCL 14
 TwoWire I2Cbus = TwoWire(0);
@@ -65,7 +65,7 @@ TwoWire I2Cbus = TwoWire(0);
 #define SCREEN_ADDRESS 0x3C
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &I2Cbus, OLED_RESET);
 /* Private variables ------------------------------------------------------- */
-static bool debug_nn = false;  // Set this to true to see e.g. features generated from the raw signal
+static bool debug_nn = false;  
 static bool is_initialised = false;
 uint8_t *snapshot_buf;  //points to the output of the capture
 static camera_config_t camera_config = {
