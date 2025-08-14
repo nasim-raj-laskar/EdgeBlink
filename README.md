@@ -1,9 +1,10 @@
 # EdgeBlink
 
-A real-time object detection system using ESP32-CAM with TensorFlow Lite.
+**EdgeBlink** is a real-time object detection system running entirely on the ESP32-CAM using a quantized TensorFlow Lite model. Optimized with the EON™ Compiler, it delivers \~1.4 FPS with minimal memory usage, displays results on an OLED, and supports both USB and standalone battery-powered operation for portable AI-IoT applications.
 
-<img src="img/image.jpg" alt="ESP32-CAM Setup" width="300">
-
+<div align="center" style="border: 2 px solid #ccc; padding: 10 px; display: inline-block;">
+  <img src="img/image.jpg" alt="ESP32-CAM Setup" width="300">
+</div>
 
 ## 🚀 Features
 
@@ -26,6 +27,7 @@ A real-time object detection system using ESP32-CAM with TensorFlow Lite.
 - **Model Version**: Quantized (int8)
 
 ### Confusion Matrix
+<img src="img/- (4).png" alt="ESP32-CAM Setup" width="800">
 The model achieves perfect classification across all three classes:
 
 | Class | Background | Bitter Gourd | Onion | Tomato |
@@ -77,21 +79,22 @@ The model was trained on a balanced dataset with samples distributed across diff
 ## 📁 Project Structure
 
 ```
-esp32cam-object-detection/
-├── img/                          # Documentation images
-├── pcb/                          # PCB design files
-│   ├── dktkicad_prl             # KiCad project files
-│   ├── dktkicad_pro             # KiCad pro files
-│   ├── dktkicad_sch             # Schematic files
-│   └── fp-info-cache            # Footprint cache
-├── src/                          # Source code
-│   ├── edge-impulse-sdk/        # Edge Impulse SDK
-│   ├── model-parameters/        # Model configuration
-│   ├── tflite-model/           # TensorFlow Lite model
-│   ├── detect-esp32cam_inferencing.h  # Main inference header
-│   ├── detect.ino              # Main Arduino sketch
-│   └── library.properties      # Library properties
-└── README.md                   # This file
+EdgeBlink/
+├── img/                               # Documentation images
+├── pcb/                               # PCB design files
+│   ├── dct.kicad_prl                  # KiCad project files
+│   ├── dct.kicad_pro                  # KiCad pro files
+│   ├── dct.kicad_sch                  # Schematic files
+│   └── fp-info-cache                  # Footprint cache
+├── src/                               # Source code
+│   ├── edge-impulse-sdk/              # Edge Impulse SDK
+│   ├── model-parameters/              # Model configuration
+│   ├── tflite-model/                  # TensorFlow Lite model
+│   └── detect-esp32cam_inferencing.h  # Main inference header
+│ 
+├── detect.ino                         # Main Arduino sketch
+├── library.properties                 # Library properties
+└── README.md                          # This file
 ```
 
 ## 💻 Real-Time Detection Output
