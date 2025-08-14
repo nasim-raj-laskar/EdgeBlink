@@ -61,20 +61,19 @@ The model was trained on a balanced dataset with samples distributed across diff
 
 ## 🔧 Hardware Requirements
 
-### Components
-- ESP32-CAM module with OV2640 camera sensor
-- OLED Display (128x64)
-- MP1584 Buck Converter (for independent power supply)
-- FTDI USB-to-Serial converter (for development)
-- Prototyping PCB
-- Header pins and jumper wires
+| **Component**                              | **Details**                                                                 |
+|--------------------------------------------|-------------------------------------------------------------------------------|
+| **ESP32-CAM Module**                       | OV2640 camera sensor                                                         |
+| **OLED Display**                           | 128x64 resolution                                                            |
+| **MP1584 Buck Converter**                  | Adjustable output for independent power supply                               |
+| **FTDI USB-to-Serial Converter**           | For development and programming                                              |
+| **Prototyping PCB**                        | For assembling components                                                    |
+| **Header Pins & Jumper Wires**             | For connections                                                              |
 
-### Power Supply Options
-1. **Development Mode**: USB power via FTDI module
-2. **Production Mode**: Independent power supply using MP1584 buck converter
-   - Input voltage: 4.5V - 28V
-   - Output voltage: 5V (adjustable)
-   - Current capacity: Up to 3A
+| **Power Supply Mode**     | **Description**                                            | **Specifications**                     |
+|---------------------------|------------------------------------------------------------|------------------------------------------|
+| **Development Mode**      | USB power via FTDI module                                  | —                                        |
+| **Production Mode**       | MP1584 buck converter for standalone battery operation     | Input: 4.5V–28V, Output: 5V adjustable, Up to 3A |
 
 ## 📁 Project Structure
 
