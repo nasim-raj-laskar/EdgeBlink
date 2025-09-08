@@ -76,7 +76,7 @@ The model was trained on a balanced dataset with samples distributed across diff
 
 | **Power Supply Mode**     | **Description**                                            | **Specifications**                     |
 |---------------------------|------------------------------------------------------------|------------------------------------------|
-| **Development Mode**      | USB power via FTDI module                                  | —                                        |
+| **Development Mode**      | USB power via FTDI module                                  | Flashing code via USB hub                                   |
 | **Production Mode**       | MP1584 buck converter for standalone battery operation     | Input: 4.5V–28V, Output: 5V adjustable, Up to 3A |
 
 ## 📁 Project Structure
