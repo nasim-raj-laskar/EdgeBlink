@@ -3,7 +3,11 @@
 **EdgeBlink** is a real-time object detection system running entirely on the ESP32-CAM using a quantized TensorFlow Lite model. Optimized with the EON™ Compiler, it delivers \~1.4 FPS with minimal memory usage, displays results on an OLED, and supports both USB and standalone battery-powered operation for portable AI-IoT applications.
 
 <div align="center" style="border: 2 px solid #ccc; padding: 10 px; display: inline-block;">
-  <img src="img/image.jpg" alt="ESP32-CAM Setup" width="300">
+  <img src="img/off.jpg" alt="ESP32-CAM Setup" width="500">
+</div>
+<div align="center" style="border: 2 px solid #ccc; padding: 10 px; display: inline-block;">
+  <img src="img/on.jpg" alt="ESP32-CAM Setup" width="500">
+  <P><i>sorry abt the intensity of the power led...and poor photography</i></P>
 </div>
 
 ## 🚀 Features
